@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        inches to cm converter
+    </title>
+    <link rel="stylesheet" href="converter.css">
+</head>
+<body>
+    <div id="wrapper">
+      <h2>inches to cm</h2>
+      <div class="inputdiv">
+        
+        <input type="number" id="inches" placeholder="Enter inches"></div>
+        <div><button type="submit"onclick="hema()">Convert</button></div>
+        <div id="result"></div>
+     </div>
+     <script>
+        function hema(){
+            const inches=document.getElementById('inches').value;
+            if(inches !==""){
+                const cm=inches*2.54;
+                document.getElementById('result').textContent=cm.toFixed(2);
+            }
+            else{
+                document.getElementById('result').textContent="Please"
+        }}
+            
+     </script>
+</body></html>
